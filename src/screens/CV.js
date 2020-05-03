@@ -19,7 +19,7 @@ export default function CV(params) {
                         <SchoolLogo className={classes.svg} />
                     <p className={classes.mr0}> FORMATION </p>
                     </div>
-                    <Step year="2016 - 2019" name="Master 2 Sciences-Cognitives et Médias Numérique" place="IDMC, Nancy (54)" />
+                    <Step year="2016 - 2019" name="Master 2 Sciences-Cognitives et Médias Numériques" place="IDMC, Nancy (54)" />
                     <Step year="2014 - 2016" name="Licence Maths - Info" place="UFR Maths - Info, Nancy (54)" />
                     <Step year="2012 - 2014" name="DUT Informatique" place="IUT Charlemagne, Nancy (54)" />
                 </div>
@@ -28,8 +28,8 @@ export default function CV(params) {
                         <WorkLogo className={classes.svg} />
                         <p className={classes.mr0}> EXPERIENCE PRO. </p>
                     </div>
-                    <Step year="Decembre 2019 - Aujourd'hui" name="Altran - Ingénieur Consultant" place="" />
-                    <Step year="Mars 2019 - Decembre 2019" name="BigInt - UX Designer/Développeur" place={Texts.bigInt} />
+                    <Step year="Décembre 2019 - Aujourd'hui" name="Altran - Ingénieur Consultant" place="" />
+                    <Step year="Mars 2019 - Décembre 2019" name="BigInt - UX Designer/Développeur" place={Texts.bigInt} />
                     <Step year="Septembre 2017 - Août 2018" name="Orange - Consultant BI" place={Texts.orange} />
                     <Step year="Juin 2016 - Août 2016" name="Atelier iGloo - Consultant CRM" place={Texts.igloo} />
                 </div>

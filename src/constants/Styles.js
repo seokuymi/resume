@@ -26,7 +26,9 @@ export default {
         fontWeight: 500
     },
     droitepoint: {
-        fontSize: 16
+        fontSize: 16,
+        textDecoration: "none",
+        color: Colors.white,
     },
     buttonsAlign: {
         display: 'flex',
