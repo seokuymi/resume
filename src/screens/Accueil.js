@@ -10,7 +10,7 @@ export default function Accueil(params) {
     const infos = [{name:"Âge",value:"25 ans"},{name:"E-mail",value:"quentin.parmentier.54@gmail.com"},{name:"En poste chez",value:"Altran"}]
 
     return(
-        <div className={classes.accueil}>
+        <div className={classes.accueil} style={{height:params.height}}>
             <div> 
                 <p className={classes.me}>Je suis <span> Développeur </span></p>
             </div>
@@ -39,7 +39,7 @@ export default function Accueil(params) {
 
 const useStyles = makeStyles({
     accueil : {
-        backgroundImage: `url(${fond})`,
+        background: `url(${fond}) no-repeat center`,
         backgroundSize : "cover",
         alignItems: "center",
         justifyContent: "center",
@@ -52,17 +52,19 @@ const useStyles = makeStyles({
         display : "flex",
         fontSize : 40,
         fontWeight: 700,
-        margin: "13px 0px"
+        margin: "13px 0px",
+        color: "white"
     },
     p :{
-        margin: '10px 0px'
+        margin: '10px 0px',
+        color: "white"
     },
     name : Styles.gauchpoint,
     value : Styles.droitepoint,
     buttons : Styles.buttonsAlign,
     buttonSize : {
         width: '95%',
-        marginTop: 35
+        marginTop: "20%"
     },
     buttonO : Styles.buttonsO
     

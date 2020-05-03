@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Colors from '../constants/Colors';
 import { MoreVert } from '@material-ui/icons';
 import {ReactComponent as Github} from '../img/github.svg';
 import {ReactComponent as ExternalLink} from '../img/externalLink.svg';
@@ -10,11 +9,12 @@ export default function Step(props) {
     const classes = useStyles({props: props});
     const images = require.context("../img/projects", true);
     const [show,setShow] = React.useState(false);
+    const [firstLoad,setFirstLoad] = React.useState(true);
 
     let img = images('./' + props.url);
     return(
         <>
-            <div className={classes.card} onClick={() => setShow(!show)}>
+            <div className={classes.card} onClick={() => {setFirstLoad(false);setShow(!show)}}>
                 <div className={classes.divphoto}>
                     <img className={`${classes.photo} ${props.photoFit === true ? classes.photoFit : null}`} src={img} /> 
                 </div>
@@ -24,7 +24,7 @@ export default function Step(props) {
                         <p className={classes.textDesc}>{props.text[0]}</p>
                     </div>
                 </div>
-                <div className={`${classes.hiddenPart} ${show === true ? classes.animation : classes.animationinverse}`}> 
+                <div className={`${classes.hiddenPart} ${firstLoad === true ? null : show === true ? classes.animation : classes.animationinverse}`}> 
                     <div className={classes.titre}> Réalisations </div>
                     <div className={classes.liste}> 
                         {props.text.map((value,index) => index!== 0 ? <li className={classes.item} key={index}> {value} </li> : null)}
@@ -65,7 +65,8 @@ const useStyles = makeStyles(
             backgroundColor: "white",
             marginTop : 25,
             cursor: "pointer",
-            overflow: "hidden"
+            overflow: "hidden",
+            boxShadow: "#0000007d 0px 0px 8px"
         },
         title : {
             display: "flex",

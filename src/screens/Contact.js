@@ -8,14 +8,20 @@ import { PlaceTwoTone, MailTwoTone, PhoneAndroidTwoTone } from '@material-ui/ico
 export default function CV(params) {
     const classes = useStyles();
     const [face,setFace] = React.useState(true);
+    const [isturning,setTurn] = React.useState(false);
 
     return(
-        <div onClick={(event) => setFace(!face)} className={`${classes.cvContainer} ${face === true ? classes.recto : classes.verso}`}>
+        <div onClick={(event) =>{setTurn(true);setTimeout(swipe, 250)}} className={`${classes.cvContainer} ${face === true ? classes.recto : classes.verso} ${isturning === true ? classes.startflipRight : null}`}>
             <div className={classes.centering}> 
                 {face === true ? renderRecto() : renderVerso()}
             </div>
         </div>
     )
+    
+    function swipe(){
+        setTurn(false);
+        setFace(!face);
+    }
 
     function renderRecto(){
         return(
@@ -53,15 +59,19 @@ const useStyles = makeStyles({
         display: 'flex',
         alignItems: "center",
         justifyContent: "center",
-        cursor: "pointer"
+        cursor: "pointer",
+        height: 'calc(100vh - 60px)'
     },
     recto: {
+        animation: `$flipRight 300ms`,
         background: `url(${rectoLogo}) center no-repeat`,
-        backgroundSize: 'contain',
+        backgroundSize: 'contain'
     },
     verso: {
+        animation: `$flipLeft 300ms`,
         background: `url(${versoLogo}) center no-repeat`,
         backgroundSize: 'contain',
+        transform: "rotateY(0deg)"
     },
     centering: {
         marginBottom: '29%'
@@ -84,5 +94,43 @@ const useStyles = makeStyles({
     },
     textVerso: {
         color: Colors.black
+    },
+    startflipRight: {
+        animation: `$flipRight1 300ms`,
+    },
+    startflipLeft: {
+        animation: `$flipLeft1 300ms`,
+    },
+    "@keyframes flipRight": {
+        "0%": {
+            transform: "rotateY(90deg)"
+        },
+        "100%": {
+            transform: "rotateY(0deg)"
+        }
+    },
+    "@keyframes flipLeft": {
+        "0%": {
+            transform: "rotateY(-90deg)"
+        },
+        "100%": {
+            transform: "rotateY(0deg)"
+        }
+    },
+    "@keyframes flipRight1": {
+        "0%": {
+            transform: "rotateY(0deg)"
+        },
+        "100%": {
+            transform: "rotateY(-90deg)"
+        }
+    },
+    "@keyframes flipLeft1": {
+        "0%": {
+            transform: "rotateY(0deg)"
+        },
+        "100%": {
+            transform: "rotateY(90deg)"
+        }
     }
 });

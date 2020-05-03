@@ -33,11 +33,11 @@ export default {
         justifyContent: 'space-evenly',
     },
     buttonsO: {
-        color: Colors.blue,
-        border: `solid 2px ${Colors.blue}`,
+        color: Colors.white,
+        border: `solid 2px ${Colors.white}`,
         '&:hover' : {
-            backgroundColor : Colors.blue,
-            color: '#FFF'
+            backgroundColor : Colors.white,
+            color: Colors.blue
         }
     }
 };

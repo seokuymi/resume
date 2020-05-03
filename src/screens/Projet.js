@@ -17,7 +17,6 @@ export default function CV(params) {
         let git = Projects[project].git;
         let path = Projects[project].path;
         let photoFit = Projects[project].photoFit === undefined ? false : true;
-        console.log(photoFit)
         projects.push(<ProjectCard key={id} url={url} title={title} text={text} photoFit={photoFit} git={git} path={path}/>)
     }
 

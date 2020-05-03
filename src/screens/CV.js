@@ -48,6 +48,7 @@ const useStyles = makeStyles({
         marginRight: "auto",
         marginLeft: "auto",
         marginTop: 45,
+        marginBottom: 45,
         padding: "0px 15px",
         boxShadow: "#0000007d 0px 0px 8px"
     },
@@ -67,11 +68,13 @@ const useStyles = makeStyles({
     },
     divContenu: {
         display: "flex",
-        paddingTop: 30
+        flexFlow: "wrap"
     },
     contenu: {
         flex: 1,
-        padding: '0px 15px 0px 0px'
+        padding: '0px 15px 0px 0px',
+        marginTop: 30,
+        minWidth: 249
     },
     saumon: {
         backgroundColor: Colors.saumon,
