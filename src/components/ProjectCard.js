@@ -16,7 +16,7 @@ export default function Step(props) {
         <>
             <div className={classes.card} onClick={() => {setFirstLoad(false);setShow(!show)}}>
                 <div className={classes.divphoto}>
-                    <img className={`${classes.photo} ${props.photoFit === true ? classes.photoFit : null}`} src={img} /> 
+                    <img alt="photo_projet" className={`${classes.photo} ${props.photoFit === true ? classes.photoFit : null}`} src={img} /> 
                 </div>
                 <div className={classes.text}>
                     <div className={classes.title}> {props.title} <MoreVert /></div>
@@ -31,11 +31,11 @@ export default function Step(props) {
                     </div>
                     <div className={classes.rendubot}>
                         {props.path !== "" ? 
-                            <a onClick={(event) => event.stopPropagation()} target='_blank' href={props.path}>
+                            <a onClick={(event) => event.stopPropagation()} rel="noopener noreferrer" target='_blank' href={props.path}>
                                 <ExternalLink className={classes.svg}/>
                             </a> : null}
                         {props.git !== "" ?
-                            <a onClick={(event) => event.stopPropagation()} target='_blank' href={props.path}>
+                            <a onClick={(event) => event.stopPropagation()} rel="noopener noreferrer" target='_blank' href={props.path}>
                                 <Github className={classes.svg}/> 
                             </a>: null}
                     </div>

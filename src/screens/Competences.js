@@ -25,7 +25,7 @@ export default function Competences(params) {
             <div className={classes.competences}> 
                 {blockVals.competences.map((competence,index) => 
                     <div key={index} className={classes.divImage}>
-                        <img className={classes.image} src={images('./'+blockVals.path[index])} />
+                        <img alt={competence} className={classes.image} src={images('./'+blockVals.path[index])} />
                         <p className={classes.name}> {competence} </p>
                     </div> )}
             </div>

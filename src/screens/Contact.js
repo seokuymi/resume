@@ -52,7 +52,6 @@ export default function CV(params) {
 const useStyles = makeStyles({
     cvContainer: {
         width: '85%',
-        height: '100%',
         margin: 'auto',
         maxWidth: 400,
         minWidth: 320,
