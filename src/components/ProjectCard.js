@@ -35,7 +35,7 @@ export default function Step(props) {
                                 <ExternalLink className={classes.svg}/>
                             </a> : null}
                         {props.git !== "" ?
-                            <a onClick={(event) => event.stopPropagation()} rel="noopener noreferrer" target='_blank' href={props.path}>
+                            <a onClick={(event) => event.stopPropagation()} rel="noopener noreferrer" target='_blank' href={props.git}>
                                 <Github className={classes.svg}/> 
                             </a>: null}
                     </div>
