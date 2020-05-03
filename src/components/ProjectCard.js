@@ -127,7 +127,8 @@ const useStyles = makeStyles(
             animation: `$unshow 500ms`,
         },
         svg: {
-            height: 60
+            height: 60,
+            width: 60
         },
         textDesc: {
             margin: 0
