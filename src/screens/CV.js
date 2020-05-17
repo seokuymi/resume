@@ -28,7 +28,7 @@ export default function CV(params) {
                         <WorkLogo className={classes.svg} />
                         <p className={classes.mr0}> EXPERIENCE PRO. </p>
                     </div>
-                    <Step year="Décembre 2019 - Aujourd'hui" name="Altran - Ingénieur Consultant" place="" />
+                    <Step year="Décembre 2019 - Aujourd'hui" name="Altran - Ingénieur Consultant" place={Texts.altran} />
                     <Step year="Mars 2019 - Décembre 2019" name="BigInt - UX Designer/Développeur" place={Texts.bigInt} />
                     <Step year="Septembre 2017 - Août 2018" name="Orange - Consultant BI" place={Texts.orange} />
                     <Step year="Juin 2016 - Août 2016" name="Atelier iGloo - Consultant CRM" place={Texts.igloo} />
