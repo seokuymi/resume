@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.e89f6038.chunk.css",
-    "main.js": "/resume/static/js/main.dd421325.chunk.js",
-    "main.js.map": "/resume/static/js/main.dd421325.chunk.js.map",
+    "main.js": "/resume/static/js/main.b166a2da.chunk.js",
+    "main.js.map": "/resume/static/js/main.b166a2da.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.486ca00e.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.486ca00e.js.map",
-    "static/js/2.727352d9.chunk.js": "/resume/static/js/2.727352d9.chunk.js",
-    "static/js/2.727352d9.chunk.js.map": "/resume/static/js/2.727352d9.chunk.js.map",
+    "static/js/2.3c277fb6.chunk.js": "/resume/static/js/2.3c277fb6.chunk.js",
+    "static/js/2.3c277fb6.chunk.js.map": "/resume/static/js/2.3c277fb6.chunk.js.map",
     "index.html": "/resume/index.html",
-    "precache-manifest.a9708a356f987e35f7ea388987892ea9.js": "/resume/precache-manifest.a9708a356f987e35f7ea388987892ea9.js",
+    "precache-manifest.1e1d4ce02107d1b38d5d27f42fce507e.js": "/resume/precache-manifest.1e1d4ce02107d1b38d5d27f42fce507e.js",
     "service-worker.js": "/resume/service-worker.js",
     "static/css/main.e89f6038.chunk.css.map": "/resume/static/css/main.e89f6038.chunk.css.map",
-    "static/js/2.727352d9.chunk.js.LICENSE.txt": "/resume/static/js/2.727352d9.chunk.js.LICENSE.txt",
+    "static/js/2.3c277fb6.chunk.js.LICENSE.txt": "/resume/static/js/2.3c277fb6.chunk.js.LICENSE.txt",
     "static/media/accueil.jpg": "/resume/static/media/accueil.978b9d3e.jpg",
     "static/media/accueil2.jpg": "/resume/static/media/accueil2.6f03bfec.jpg",
     "static/media/avatar.jpg": "/resume/static/media/avatar.ffa9614d.jpg",
@@ -35,6 +35,7 @@
     "static/media/p5.svg": "/resume/static/media/p5.12af0b48.svg",
     "static/media/php.svg": "/resume/static/media/php.7634d1a3.svg",
     "static/media/portailsante.PNG": "/resume/static/media/portailsante.c5139503.PNG",
+    "static/media/qlearning.PNG": "/resume/static/media/qlearning.30af4e5f.PNG",
     "static/media/react.svg": "/resume/static/media/react.f0793d9f.svg",
     "static/media/recto.svg": "/resume/static/media/recto.fdf17b8e.svg",
     "static/media/school.svg": "/resume/static/media/school.ecf149a7.svg",
@@ -49,8 +50,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.486ca00e.js",
-    "static/js/2.727352d9.chunk.js",
+    "static/js/2.3c277fb6.chunk.js",
     "static/css/main.e89f6038.chunk.css",
-    "static/js/main.dd421325.chunk.js"
+    "static/js/main.b166a2da.chunk.js"
   ]
 }
