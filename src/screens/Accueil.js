@@ -10,7 +10,7 @@ export default function Accueil(params) {
     const classes = useStyles();
     const infos = [{name:"Âge",value:"25 ans"},{name:"E-mail",value:"quentin.parmentier.54@gmail.com"},{name:"En poste chez",value:"Altran"}]
     const [textAnime,setTxt] = React.useState("");
-    const allTxt = ["Ingénieur","Développeur","Cogniticien","Passionné"];
+    const allTxt = ["Ingénieur","Développeur","Chef de produit","Cogniticien","Passionné"];
     const [id, setId] = React.useState(0);
     const [complete, setComplete] = React.useState(false);
 
